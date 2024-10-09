@@ -1,9 +1,3 @@
-// function convertCelciusToFahrenheit() {
-//   var c = document.getElementById("input-suhu").value;
-//   var f = c * (9 / 5) + 32;
-//   document.getElementById("hasil-suhu").value = f;
-// }
-console.log('tersambung');
 
 function validateForm(){
   console.log('Validasi tersambung');
@@ -22,7 +16,7 @@ document.getElementById('hasil-suhu').value = result;
 document.getElementById('cara-kalkulasi').value = value + ' x (9/5) + 32 = ' + result;
 }
 
-
+// menu reset
 function reset() {
   document.getElementById('input-suhu').value = '';
   document.getElementById('hasil-suhu').value = '';
