@@ -32,18 +32,17 @@
           </article>
 
           <!-- inputan suhu -->
-          <form class="container-satu">
-            <div>
+            <div class="container-satu">
+              <div>
               <label for="">Celcius(&deg;C)</label>
             </div>
+            <input type="number" id="input-suhu"></input>
+          </div>
 
-            <textarea id="input-suhu"></textarea>
-            <div class="btn">
-              <button class="form-btn form-btn-konversi" onclick="convertCelciusToFahrenheit();">Konversi</button>
-              <button class="form-btn form-btn-reset">Reset</button>
-              <button class="form-btn form-btn-reverse">Reverse</button>
-            </div>
-          </form>
+          <div class="btn">
+            <button type="button" class="form-btn form-btn-konversi" onclick="validateForm()">Konversi</button>
+            <button type="button" class="form-btn form-btn-reset" onclick="reset()">Reset</button>
+          </div>
 
           <!-- hasil inputan -->
           <div class="container-dua">
@@ -74,11 +73,22 @@
           <article>
             <p>
               Suhu <span class="suhu-style">S</span> dalam derajat Fahrenheit
-              (&deg;F) sama dengan suhu <span class="suhu-style">S</span> dalam
-              derajat
+              (&deg;F) sama dengan suhu <span class="suhu-style">S</span> <br> dalam
+              derajat Celcius (&deg;C) kali 9/5 tambah 32
             </p>
 
-            <p><span class="suhu-style">S</span><sub>(&deg;F)</sub></p>
+            <p>
+              <span class="suhu-style">S</span><sub>(&deg;F)</sub>=(<span class="suhu-style">S</span><sub>(&deg;C)</sub> x 9/5) + 32
+            </p>
+
+            <p>
+              atau
+            </p>
+
+            <p>
+              <span class="suhu-style">S</span><sub>(&deg;F)</sub>=(<span class="suhu-style">S</span><sub>(&deg;C)</sub> x 1.8) + 32
+            </p>
+            </p>
           </article>
         </section>
       </div>
