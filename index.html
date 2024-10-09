@@ -19,69 +19,74 @@
 
     <!-- main start -->
     <main class="main">
-      <!-- form content -->
-      <section>
-        <!-- instruksi -->
-        <article>
-          <p>
-            Masukan suhu derajat Celcius (&deg;C) ke kotak bawah, lalu klik
-            tombol konversi <br />
-            untuk mendapatkan hasil koversi dalam bentuk Fahrenheit (&deg;F)
-          </p>
-        </article>
+      <div class="box-satu">
+        <!-- form content -->
+        <section>
+          <!-- instruksi -->
+          <article>
+            <p>
+              Masukan suhu derajat Celcius (&deg;C) ke kotak bawah, lalu klik
+              tombol konversi <br />
+              untuk mendapatkan hasil koversi dalam bentuk Fahrenheit (&deg;F)
+            </p>
+          </article>
 
-        <!-- inputan suhu -->
-        <form action="container-satu">
+          <!-- inputan suhu -->
+          <form class="container-satu">
+            <div>
+              <label for="">Celcius(&deg;C)</label>
+            </div>
+
+            <textarea id="input-suhu"></textarea>
+            <div class="btn">
+              <button class="form-btn form-btn-konversi" onclick="convertCelciusToFahrenheit();">Konversi</button>
+              <button class="form-btn form-btn-reset">Reset</button>
+              <button class="form-btn form-btn-reverse">Reverse</button>
+            </div>
+          </form>
+
+          <!-- hasil inputan -->
+          <div class="container-dua">
+            <div>
+              <label for="">Fahrenheit(&deg;F)</label>
+            </div>
+
+            <textarea id="hasil-suhu"></textarea>
+          </div>
+
+          <!-- cara kalkulasi -->
           <div>
-            <label for="">Celcius(&deg;C)</label>
+            <div class="container-tiga">
+              <label for="">Cara kalkulasi</label>
+            </div>
+            <textarea name="" id="cara-kalkulasi"></textarea>
           </div>
-
-          <textarea name="" id="input-suhu"></textarea>
-          <div class="btn">
-            <button class="form-btn form-btn-konversi">Konversi</button>
-            <button class="form-btn form-btn-reset">Reset</button>
-            <button class="form-btn form-btn-reverse">Reverse</button>
-          </div>
-        </form>
-
-        <!-- hasil inputan -->
-        <div class="container-dua">
-          <div>
-            <label for="">Fahrenheit(&deg;F)</label>
-          </div>
-          <textarea name="" id="hasil-suhu"></textarea>
-        </div>
-
-        <!-- cara kalkulasi -->
-        <div>
-          <div class="container-tiga">
-            <label for="">Cara kalkulasi</label>
-          </div>
-          <textarea name="" id="cara-kalkulasi"></textarea>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- info content -->
-      <section>
-        <header>
-          <h2>Cara Konversi Celcius ke Fahrenheit</h2>
-        </header>
+      <div class="box-dua">
+        <section>
+          <header>
+            <h2>Cara Konversi Celcius ke Fahrenheit</h2>
+          </header>
 
-        <article>
-          <p>
-            Suhu <span class="suhu-style">S</span> dalam derajat Fahrenheit
-            (&deg;F) sama dengan suhu <span class="suhu-style">S</span> dalam
-            derajat
-          </p>
+          <article>
+            <p>
+              Suhu <span class="suhu-style">S</span> dalam derajat Fahrenheit
+              (&deg;F) sama dengan suhu <span class="suhu-style">S</span> dalam
+              derajat
+            </p>
 
-          <p><span class="suhu-style">S</span><sub>(&deg;F)</sub></p>
-        </article>
-      </section>
+            <p><span class="suhu-style">S</span><sub>(&deg;F)</sub></p>
+          </article>
+        </section>
+      </div>
     </main>
     <!-- main end -->
 
     <!-- footer start -->
-    <footer>
+    <footer class="footer">
       <p class="paragraf-link">Made by:</p>
       <p>
         <span
@@ -93,5 +98,7 @@
       </p>
     </footer>
     <!-- footer end -->
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
